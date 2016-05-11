@@ -1,0 +1,25 @@
+/*----------------------
+-----  MEDIA BOX
+------------------------*/
+
+.top-title {
+	padding: 2.8rem 0 2rem;
+	font-family: $avant-bold;
+	font-size: calc-rem(34px);
+	color:$cl-white;
+	text-transform: uppercase;
+	text-shadow:2px 2px red;
+	letter-spacing: 2.6px;
+}
+
+.media-box {
+	position:relative;
+	display: inline-block;
+	margin-top: 0.6rem;
+	width:44%;
+	text-align: left;
+	img:first-child {
+		width:100%;
+	}
+}
+

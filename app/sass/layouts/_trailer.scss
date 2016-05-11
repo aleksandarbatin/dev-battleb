@@ -1,0 +1,21 @@
+.trailer {
+	background-image: url('../../assets/img/bg-trailer.jpg');
+	background-position: center;
+	background-size: cover;
+	width:100%;
+	.container {
+		text-align: center;
+	}
+	.top-title {
+		padding-bottom: 3.75rem;
+	}
+	.trailer-wrapper {
+		position:relative;
+		padding-bottom: 2.5rem;
+		img:last-child {
+			position:absolute;
+			left: 44%;
+			top: 29%;
+		}
+	}
+}

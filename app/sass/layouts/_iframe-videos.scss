@@ -1,0 +1,60 @@
+/*=======================
+----- IFRAME VIDEOS
+========================*/
+
+.iframe-videos {
+	background-image: url('../../assets/img/iframe-bg.jpg');
+	background-position: center;
+	background-size: cover;
+	width:100%;
+	.container{
+		text-align: center;
+		position:relative;
+		.link-psn {
+			float:left;
+			margin-top: 0;
+			position:absolute;
+			left:4%;
+		}
+		.logo-title {
+			clear:both;
+			padding-top: 3rem;
+		}
+		.top-title {
+			padding-top: 1rem;
+			padding-bottom: 0.5rem;
+			letter-spacing: 2px;
+		}
+		.ifvideo-wrapper {
+			margin-top: 1.5rem;
+		}
+		.play-icon {
+			position: absolute;
+			top: 50%;
+			left: 46%;
+			z-index: 1;
+		}
+		.choose-subtitle {
+			position:relative;
+			margin-top: 0.5rem;
+			padding-bottom: 2.3rem;
+			img {
+				position:relative;
+			}
+			.instruction-subtitle {
+				position:absolute;
+				top:15%;
+				left:36%;
+				font-family: $avant-bold;
+				font-size: calc-rem(18px);
+				color:$cl-white;
+				text-shadow:2px 2px red;
+				text-transform: uppercase;
+
+			}
+		} 
+	}
+}
+
+
+

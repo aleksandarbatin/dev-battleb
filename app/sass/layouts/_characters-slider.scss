@@ -1,0 +1,36 @@
+/*=======================
+-----  VARIABLES
+========================*/
+
+.characters-slider {
+	background-image: url('../../assets/img/bg-characters.jpg');
+	background-position: center;
+    background-size: cover;
+    width: 100%;
+    z-index: -1;
+    .container {
+    	text-align: center;
+    }
+    .top-title {
+    	padding-top: 3rem;
+    	padding-bottom: 3.2rem;
+    	letter-spacing: 2px;
+    }
+}
+
+.characters-slider_content {
+	
+}
+.characters-slider_panel {
+	margin: 0 70px;
+	padding-bottom: 3.5rem;
+	img:nth-of-type(5) {
+		margin-right: 0;
+	}
+	img:nth-of-type(10) {
+		margin-right: 0;
+	}
+	.img-top-raw {
+		margin-bottom: 6rem;
+	}
+}

@@ -1,0 +1,48 @@
+/*----------------------
+-----  BASE CONFIG
+------------------------*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: $basefont-size;
+  width: 100%;
+  overflow-y: scroll;
+  -webkit-font-smoothing: antialiased;
+  // @include breakpoint(mobile) {
+  //   font-size: 10px;
+  // }
+  // @include breakpoint(tablet) {
+  //   font-size: 14px;
+  // }
+}
+
+body {
+  width: 100%;
+  overflow: hidden;
+}
+
+li {
+  display: inline-block;
+  list-style: none;
+}
+
+p {
+    font-family: "Franklin Gothic Medium";
+    color: $cl-black;
+  }
+
+  /*----------------------
+-----  MAIN WRAP
+------------------------*/
+
+.container {
+  width: 100%;
+  max-width: 1025px;
+  margin: 0 auto;
+  display: block;
+}

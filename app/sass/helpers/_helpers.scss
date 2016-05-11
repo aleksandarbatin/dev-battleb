@@ -1,0 +1,23 @@
+/*----------------------
+-----  HELPERS
+------------------------*/
+
+@function calc-rem($target) {
+   @return ($target / $basefont-size) * 1rem;
+}
+
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.top-title {
+	font-family: $avant-bold;
+	font-size: calc-rem(34px);
+	color:$cl-white;
+	text-transform: uppercase;
+	text-shadow:2px 2px red;
+}

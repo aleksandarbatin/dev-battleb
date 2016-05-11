@@ -1,0 +1,458 @@
+/*=======================
+-----  VARIABLES
+========================*/
+/*----------------------
+-----  HELPERS
+------------------------*/
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
+.top-title {
+  font-family: Avantgarde Bold;
+  font-size: 2.125rem;
+  color: #FFF;
+  text-transform: uppercase;
+  text-shadow: 2px 2px red; }
+
+/*----------------------
+-----  RESETS
+------------------------*/
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/*----------------------
+-----  BASE CONFIG
+------------------------*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 16px;
+  width: 100%;
+  overflow-y: scroll;
+  -webkit-font-smoothing: antialiased; }
+
+body {
+  width: 100%;
+  overflow: hidden; }
+
+li {
+  display: inline-block;
+  list-style: none; }
+
+p {
+  font-family: "Franklin Gothic Medium";
+  color: #000; }
+
+/*----------------------
+-----  MAIN WRAP
+------------------------*/
+.container {
+  width: 100%;
+  max-width: 1025px;
+  margin: 0 auto;
+  display: block; }
+
+/*----------------------
+-----  F O N T
+------------------------*/
+@font-face {
+  font-family: 'Avantgarde Regular';
+  src: url("../../assets/fonts/texgyreadventor-regular.otf"); }
+
+@font-face {
+  font-family: 'Avantgarde Bold';
+  src: url("../../assets/fonts/texgyreadventor-bold.otf"); }
+
+/*=======================
+----- IFRAME VIDEOS
+========================*/
+.iframe-videos {
+  background-image: url("../../assets/img/iframe-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%; }
+  .iframe-videos .container {
+    text-align: center;
+    position: relative; }
+    .iframe-videos .container .link-psn {
+      float: left;
+      margin-top: 0;
+      position: absolute;
+      left: 4%; }
+    .iframe-videos .container .logo-title {
+      clear: both;
+      padding-top: 3rem; }
+    .iframe-videos .container .top-title {
+      padding-top: 1rem;
+      padding-bottom: 0.5rem;
+      letter-spacing: 2px; }
+    .iframe-videos .container .ifvideo-wrapper {
+      margin-top: 1.5rem; }
+    .iframe-videos .container .play-icon {
+      position: absolute;
+      top: 50%;
+      left: 46%;
+      z-index: 1; }
+    .iframe-videos .container .choose-subtitle {
+      position: relative;
+      margin-top: 0.5rem;
+      padding-bottom: 2.3rem; }
+      .iframe-videos .container .choose-subtitle img {
+        position: relative; }
+      .iframe-videos .container .choose-subtitle .instruction-subtitle {
+        position: absolute;
+        top: 15%;
+        left: 36%;
+        font-family: Avantgarde Bold;
+        font-size: 1.125rem;
+        color: #FFF;
+        text-shadow: 2px 2px red;
+        text-transform: uppercase; }
+
+/*=======================
+-----  VARIABLES
+========================*/
+.characters-slider {
+  background-image: url("../../assets/img/bg-characters.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  z-index: -1; }
+  .characters-slider .container {
+    text-align: center; }
+  .characters-slider .top-title {
+    padding-top: 3rem;
+    padding-bottom: 3.2rem;
+    letter-spacing: 2px; }
+
+.characters-slider_panel {
+  margin: 0 70px;
+  padding-bottom: 3.5rem; }
+  .characters-slider_panel img:nth-of-type(5) {
+    margin-right: 0; }
+  .characters-slider_panel img:nth-of-type(10) {
+    margin-right: 0; }
+  .characters-slider_panel .img-top-raw {
+    margin-bottom: 6rem; }
+
+.modes {
+  background-image: url("../../assets/img/bg-modes.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding-bottom: 1.5rem; }
+  .modes .container {
+    text-align: center;
+    overflow: hidden; }
+    .modes .container .media-box:nth-of-type(1) {
+      float: left;
+      margin-left: 2.7rem;
+      margin-bottom: 2.5rem; }
+  .modes .mini-title {
+    margin-bottom: 0.3125rem;
+    font-family: Avantgarde Bold;
+    font-size: 1rem;
+    color: #FFF;
+    text-transform: uppercase; }
+  .modes .text {
+    padding: 0.7rem 0 1.5rem;
+    font-family: Avantgarde Regular;
+    font-size: 0.875rem;
+    line-height: 1.2;
+    color: #FFF;
+    text-align: justify; }
+  .modes .media-box .play-icon {
+    width: 16%;
+    position: absolute;
+    top: 56%;
+    left: 42%;
+    z-index: 1; }
+
+.twitter-competition {
+  clear: both;
+  background-image: url("../../assets/img/bg-twitter.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden; }
+  .twitter-competition .container {
+    text-align: center;
+    padding-bottom: 2.2rem;
+    overflow: hidden; }
+  .twitter-competition .twitter-wrapper {
+    margin-top: 1rem; }
+  .twitter-competition .competition {
+    width: 45%;
+    float: left;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding-left: 2.5rem; }
+    .twitter-competition .competition .competition_text p {
+      float: left;
+      display: inline-block;
+      vertical-align: middle;
+      width: 73%;
+      padding: 0px 0 1rem;
+      color: #FFF;
+      font-family: Avantgarde Regular;
+      font-size: 0.875rem;
+      line-height: 1.2;
+      text-align: left; }
+    .twitter-competition .competition .competition_text img {
+      float: right;
+      display: inline-block;
+      margin-top: 15px; }
+    .twitter-competition .competition .competition_text-battle {
+      clear: both;
+      margin-bottom: 3rem; }
+      .twitter-competition .competition .competition_text-battle img {
+        float: left;
+        margin-right: 10px; }
+      .twitter-competition .competition .competition_text-battle .announce-title {
+        margin-bottom: 10px;
+        font-family: Avantgarde Bold;
+        font-size: 1.625rem;
+        text-transform: uppercase;
+        color: #FFF; }
+      .twitter-competition .competition .competition_text-battle .text-battle_vs {
+        color: #FFF;
+        font-family: Avantgarde Regular;
+        font-size: 0.875rem;
+        line-height: 1.2;
+        text-align: left; }
+    .twitter-competition .competition .podium-wrapper {
+      clear: both; }
+      .twitter-competition .competition .podium-wrapper .podium-img {
+        float: left;
+        position: relative; }
+      .twitter-competition .competition .podium-wrapper img:nth-of-type(1) {
+        position: relative;
+        top: 39px;
+        left: -42px; }
+      .twitter-competition .competition .podium-wrapper img:nth-of-type(2) {
+        position: relative;
+        top: 0;
+        left: -46px; }
+      .twitter-competition .competition .podium-wrapper img:nth-of-type(3) {
+        position: relative;
+        top: 62px;
+        left: -49px; }
+      .twitter-competition .competition .podium-wrapper img:nth-of-type(5) {
+        position: relative;
+        top: -1.5625rem;
+        left: -0.75rem; }
+      .twitter-competition .competition .podium-wrapper img:nth-of-type(6) {
+        position: relative;
+        top: -0.5625rem;
+        left: 1.4375rem; }
+
+.trailer {
+  background-image: url("../../assets/img/bg-trailer.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%; }
+  .trailer .container {
+    text-align: center; }
+  .trailer .top-title {
+    padding-bottom: 3.75rem; }
+  .trailer .trailer-wrapper {
+    position: relative;
+    padding-bottom: 2.5rem; }
+    .trailer .trailer-wrapper img:last-child {
+      position: absolute;
+      left: 44%;
+      top: 29%; }
+
+/*----------------------
+-----  MEDIA BOX
+------------------------*/
+.top-title {
+  padding: 2.8rem 0 2rem;
+  font-family: Avantgarde Bold;
+  font-size: 2.125rem;
+  color: #FFF;
+  text-transform: uppercase;
+  text-shadow: 2px 2px red;
+  letter-spacing: 2.6px; }
+
+.media-box {
+  position: relative;
+  display: inline-block;
+  margin-top: 0.6rem;
+  width: 44%;
+  text-align: left; }
+  .media-box img:first-child {
+    width: 100%; }
+
+/*----------------------
+-----  SLIDER
+------------------------*/
+.slick-slider {
+  position: relative;
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .slick-list:focus {
+    outline: none; }
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block; }
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  .slick-track:after {
+    clear: both; }
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  .slick-slide img {
+    display: block; }
+  .slick-slide.slick-loading img {
+    display: none; }
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  .slick-initialized .slick-slide {
+    display: block; }
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
+/*----------------------
+-----  CHARACTER VIEW
+------------------------*/
+.character-view {
+  display: none;
+  background-image: url("../../assets/img/bg-blue-charview.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%; }
+  .character-view .container {
+    overflow: hidden;
+    max-width: 1200px; }
+  .character-view .close-btn {
+    float: right;
+    margin-right: 6rem;
+    margin-top: 1.5rem; }
+  .character-view .character-img {
+    width: 40%;
+    float: left; }
+  .character-view .description {
+    float: right;
+    width: 40%;
+    margin-top: 5.5rem;
+    margin-right: 4rem;
+    padding-top: 2rem; }
+    .character-view .description .character-img {
+      float: left;
+      margin-left: 5rem; }
+    .character-view .description .sign {
+      float: left; }
+    .character-view .description .name-wrapper {
+      margin-bottom: 2rem; }
+    .character-view .description .name {
+      display: inline-block;
+      font-family: Avantgarde Bold;
+      font-size: 2rem;
+      color: yellow;
+      text-transform: uppercase; }
+    .character-view .description .imperium {
+      font-family: Avantgarde Bold;
+      font-size: 1rem;
+      text-transform: uppercase;
+      color: #FFF; }
+    .character-view .description .subtitle {
+      font-family: Avantgarde Bold;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      color: #FFF; }
+    .character-view .description .biography-text {
+      margin-bottom: 5rem;
+      padding: 0.6rem 0;
+      font-family: Avantgarde Regular;
+      font-size: 0.7rem;
+      line-height: 1.5;
+      color: #FFF;
+      text-align: justify; }
+    .character-view .description .powers-list {
+      margin-top: 1rem; }
+      .character-view .description .powers-list li {
+        margin-right: 1rem; }

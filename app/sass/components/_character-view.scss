@@ -1,0 +1,77 @@
+/*----------------------
+-----  CHARACTER VIEW
+------------------------*/
+
+.character-view {
+	display: none;
+	background-image: url('../../assets/img/bg-blue-charview.jpg');
+	background-position: center;
+	background-size: cover;
+	width:100%;
+	.container {
+		overflow: hidden;
+		max-width:1200px;
+	}
+	.close-btn {
+		float:right;
+		margin-right:6rem;
+		margin-top:1.5rem;
+	}
+	.character-img {
+		width:40%;
+		float:left;
+	}
+	.description {
+		float:right;
+		width:40%;
+		margin-top: 5.5rem;
+		margin-right:4rem;
+		padding-top: 2rem;
+		.character-img {
+			float:left;
+			margin-left: 5rem;
+		}
+		.sign {
+			float:left;
+		}
+		.name-wrapper {
+			margin-bottom: 2rem;
+		}
+		.name {
+			display:inline-block;
+			font-family: $avant-bold;
+			font-size: 2rem;
+			color:yellow;
+			text-transform: uppercase;
+		}
+		.imperium {
+			//display:inline-block;
+			font-family:$avant-bold;
+			font-size:1rem;
+			text-transform:uppercase;
+			color:$cl-white;
+		}
+		.subtitle {
+			font-family:$avant-bold;
+			font-size:0.8rem;
+			text-transform:uppercase;
+			color:$cl-white;
+		}
+		.biography-text {
+			margin-bottom:5rem;
+			padding:0.6rem 0;
+			font-family:$avant-regular;
+			font-size:0.7rem;
+			line-height: 1.5;
+			color:$cl-white;
+			text-align: justify;
+		}
+		.powers-list {
+			margin-top:1rem;
+			li {
+				margin-right:1rem; 
+			}
+		}
+	}
+}
+
