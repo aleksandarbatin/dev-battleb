@@ -9,6 +9,7 @@ var gulp = require("gulp"),
     plumber = require("gulp-plumber"),
     browserSync = require("browser-sync"),
     imagemin = require('gulp-imagemin'),
+    cache = require('gulp-cache'),
     reload = browserSync.reload;
 
 // /////////////////////////////////////////////////
@@ -37,15 +38,6 @@ gulp.task("styles",function(){
     .pipe(reload({stream:true}));
 });
 
-// /////////////////////////////////////////////////
-// Image minify
-// /////////////////////////////////////////////////
- 
-gulp.task("gulp-imagemin", function(){
-    gulp.src("app/images/*")
-    .pipe(imagemin())
-    .pipe(gulp.dest("app/assets/img/"))
-});
 
 // /////////////////////////////////////////////////
 // HTML Task
