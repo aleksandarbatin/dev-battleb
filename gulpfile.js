@@ -8,7 +8,7 @@ var gulp = require("gulp"),
     sass = require("gulp-sass"),
     plumber = require("gulp-plumber"),
     browserSync = require("browser-sync"),
-    imagemin = require('gulp-imagemin'),
+    imageOptim = require('gulp-imageoptim'),
     cache = require('gulp-cache'),
     reload = browserSync.reload;
 
@@ -68,6 +68,16 @@ gulp.task("watch",function(){
   gulp.watch("app/js/**/*.js",['scripts']);
   gulp.watch("app/sass/**/*.scss",['styles']);
   gulp.watch("app/**/*.html",['html']);
+});
+
+
+// ////////////////////////////////////////
+// Images Task
+// /////////////////////////////////////////
+gulp.task('images', function() {
+    return gulp.src('app/images/**/*')
+        .pipe(imageOptim.optimize())
+        .pipe(gulp.dest('app/assets/img'));
 });
 
 
