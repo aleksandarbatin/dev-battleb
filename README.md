@@ -45,8 +45,9 @@ Keep multiple browsers & devices in sync when building websites.
 Gulp plugin to optimize images using imageoptim and jpegmini
 
 
-Directory structure and Grunt
+Directory structure
 
+```
 app/
  |__assets/
  |   |__css/
@@ -57,7 +58,7 @@ app/
  |   |__index.html
  |__sass/
  |   |__index.html
+ ```
 
 
 
- 
