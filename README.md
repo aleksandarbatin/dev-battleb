@@ -55,7 +55,6 @@ app/
  |   |__img/
  |   |__js/
  |__images/
- |   |__index.html
  |__sass/
  |   |__index.html
  ```
