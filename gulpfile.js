@@ -9,7 +9,6 @@ var gulp = require("gulp"),
     plumber = require("gulp-plumber"),
     browserSync = require("browser-sync"),
     imageOptim = require('gulp-imageoptim'),
-    cache = require('gulp-cache'),
     reload = browserSync.reload;
 
 // /////////////////////////////////////////////////
